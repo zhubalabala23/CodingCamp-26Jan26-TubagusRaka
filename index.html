@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <script src="js/script.js"></script>
+    <nav>
+      <div class="logo"><img src="images/download.jpg" /></div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#">Portofolio</a>
+        <a href="#message-us">Message Us</a>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <h1 id="welcome-text">Hi Tubagus, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <div class="banner-placeholder">1366 x 578</div>
+      </section>
+
+      <section class="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="hq-container">
+          <div class="hq-item">
+            <div class="circle">
+              <img src="images/city/jakarta.jpg" alt="Jakarta" class="hq-img" />
+            </div>
+            <p>Jakarta</p>
+          </div>
+
+          <div class="hq-item">
+            <div class="circle">
+              <img src="images/city/bandung.jpg" alt="Bandung" class="hq-img" />
+            </div>
+            <p>Bandung</p>
+          </div>
+
+          <div class="hq-item">
+            <div class="circle">
+              <img
+                src="images/city/surabaya.jpg"
+                alt="Surabaya"
+                class="hq-img"
+              />
+            </div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="message-us" id="message-us">
+        <h2>Message Us</h2>
+
+        <div class="content-wrapper">
+          <form id="messageForm">
+            <div class="form-group">
+              <label>Nama</label>
+              <span>:</span>
+              <input type="text" id="input-nama" placeholder="nama" required />
+            </div>
+
+            <div class="form-group">
+              <label>Tanggal Lahir</label>
+              <span>:</span>
+              <input type="date" id="input-tgl" required />
+            </div>
+
+            <div class="form-group">
+              <label>Jenis Kelamin</label>
+              <span>:</span>
+              <label class="radio-label"
+                ><input type="radio" name="gender" value="Laki-Laki" checked />
+                Laki-Laki
+              </label>
+              <label class="radio-label"
+                ><input type="radio" name="gender" value="Perempuan" />
+                Perempuan
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>Pesan</label>
+              <span>:</span>
+              <textarea
+                id="input-pesan"
+                placeholder="Pesan"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <div class="result-box">
+            <p><strong>Current time :</strong> <span id="current-time">Today</span></p>
+            <br>
+            <p><strong>Nama :</strong> <span id="res-nama"></span></p>
+            <p><strong>Tanggal Lahir :</strong> <span id="res-tgl"></span></p>
+            <p><strong>Jenis Kelamin :</strong> <span id="res-gender"></span></p>
+            <p><strong>Pesan :</strong> <span id="res-pesan"></span></p>
+          </div>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created By RevoU</p>
+    </footer>
+  </body>
+</html>
